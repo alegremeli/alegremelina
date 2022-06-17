@@ -51,13 +51,35 @@ a {
 }
 
 a:hover {
-    font-size: 20px;
+    font-size: 22px;
     color: #fa6565;
 }
 
+.imagen {
+    transition-property: all;
+    transition-duration: 2sg;
+}
+
+.imagen:hover {
+transform: scale(1.1);
+}
+
+.imagen2 {
+    transition-property: all;
+    transition-duration: 2sg;
+}
+
+.imagen2:hover {
+transform: scale(1.1);
+--animate-repeat: 2;
+}
 
 .imgBanner {
     width: 100%;
+}
+
+.animate__heartBeat {
+    ---animate-duration: 3sg;
 }
 
 
@@ -176,7 +198,7 @@ footer {
     grid-area: footer;
 }
 
-/* mediaqueries tablet */
+/* mediaqueries*/
 @media screen and (max-width: 768px) {
     nav ul li {
         display: inline-block;
