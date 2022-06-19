@@ -22,19 +22,8 @@ body {
 
 /* Header */
 
-header {
-    background-color: #f4bfbf;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    grid-area: header;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 25px;
-    margin: 25px;
-    margin-left: 70px;
+.pink {
+    background-color: #f4bfbf
 }
 
 /* Fin de header */
