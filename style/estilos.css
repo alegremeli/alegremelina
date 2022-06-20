@@ -12,23 +12,29 @@ body {
 }
 
 #grilla {
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
     display: grid;
     grid-template-columns: 100%;
 }
 
-/* Header */
+
+
+/* Main */
 
 .pink {
     background-color: #f4bfbf
 }
 
-/* Fin de header */
+.fucsia {
+    background-color: #fa6565;
+}
 
-/* Main */
+.rosita {
+    background-color: salmon;
+}
 
 main {
     grid-area: main;
@@ -50,7 +56,7 @@ a:hover {
 }
 
 .imagen:hover {
-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .imagen2 {
@@ -59,8 +65,8 @@ transform: scale(1.1);
 }
 
 .imagen2:hover {
-transform: scale(1.1);
---animate-repeat: 2;
+    transform: scale(1.1);
+    --animate-repeat: 2;
 }
 
 .imgBanner {
@@ -129,7 +135,7 @@ p {
 .imagen {
     color: #fa6565;
     border-width: 5px;
-    border-style:dotted;
+    border-style: dotted;
     width: 400px;
 
 }
@@ -137,7 +143,7 @@ p {
 .imagen2 {
     color: #fa6565;
     border-width: 5px;
-    border-style:dotted;
+    border-style: dotted;
     width: 400px;
 
 }
@@ -152,7 +158,7 @@ p {
 
 .tienda {
     margin: 5px;
-    width:100%;
+    width: 100%;
 }
 
 .productosImg {
@@ -163,7 +169,7 @@ p {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    
+
 }
 
 .contacto {
@@ -203,86 +209,100 @@ footer {
     .gridsInicio {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        }
-        .imagen {
-            width: 200px;
-        }
-        .imagen2 {
-            width: 200px;
-        }
-        .productosImg {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            }
-            .gridsHistoria{
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr;
+    }
 
-            }
+    .imagen {
+        width: 200px;
+    }
+
+    .imagen2 {
+        width: 200px;
+    }
+
+    .productosImg {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .gridsHistoria {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
 
     }
 
-    @media (min-width: 768px) {
-        .gridsInicio {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            }
-            .imagen {
-                width: 300px;
-            }
-            .imagen2 {
-                width: 300px;
-            }
-            .productosImg {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                }
-                .gridsHistoria{
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-rows: 1fr;
-                }
-                nav ul li {
-                    display: inline-block;
-                    margin: 30px auto;
-                    text-align: center;
-                    padding: 15px;
-                    margin: 15px;
-                }
+}
 
-        }
+@media (min-width: 768px) {
+    .gridsInicio {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 
-        
+    .imagen {
+        width: 300px;
+    }
+
+    .imagen2 {
+        width: 300px;
+    }
+
+    .productosImg {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .gridsHistoria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 30px auto;
+        text-align: center;
+        padding: 15px;
+        margin: 15px;
+    }
+
+}
+
+
 @media (min-width: 1204px) {
     .gridsInicio {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
-        }
-        .imagen {
-            width: 350px;
-        }
-        .imagen2 {
-            width: 350px;
-        }
-        .gridsHistoria{
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 1fr;
     }
+
+    .imagen {
+        width: 350px;
+    }
+
+    .imagen2 {
+        width: 350px;
+    }
+
+    .gridsHistoria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
     .productosImg {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
 
     }
+}
+
+@media (min-width: 1400px) {
+    .imagen {
+        width: 400px;
     }
 
-    @media (min-width: 1400px) {
-            .imagen {
-                width: 400px;
-            }
-            .imagen2 {
-                width: 400px;
-            }
-    
-        }
+    .imagen2 {
+        width: 400px;
+    }
+
+}
 
 
 
