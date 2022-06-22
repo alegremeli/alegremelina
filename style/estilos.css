@@ -46,7 +46,6 @@ a {
 }
 
 a:hover {
-    font-size: 22px;
     color: #fa6565;
 }
 
@@ -212,11 +211,11 @@ footer {
     }
 
     .imagen {
-        width: 200px;
+        width: 300px;
     }
 
     .imagen2 {
-        width: 200px;
+        width: 300px;
     }
 
     .productosImg {
