@@ -1,0 +1,19 @@
+@import "../base/base";
+
+.presentacion {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: larger;
+
+    p {
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 28px;
+
+        a:hover {
+            color: $color-hover;
+        }
+    }
+}

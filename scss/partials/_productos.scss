@@ -1,0 +1,50 @@
+@import "../base/base";
+
+.productos {
+    text-align: center;
+
+    h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        letter-spacing: 2px;
+        line-height: 28px;
+        text-align: center;
+
+        .subtituloResaltado {
+            background-color: $subtitulo;
+        }
+    }
+
+    div {
+        a {
+            a:hover {
+                color: $color-hover;
+
+                p {
+                    font-size: 18px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+    div {
+        .gridsInicio {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            div {
+                .imagen {
+                    color: #fa6565;
+                    border-width: 5px;
+                    border-style: dotted;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
