@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
-* {
-    margin: 0%;
-    padding: 0%;
-}
+@import "./base/variables";
+@import "./base/reset";
+@import "./base/mixins";
 
 @import "partials/banner";
 @import "partials/presentacion";
 @import "partials/pedienlineaindex";
 @import "partials/productos";
+
 
 body {
     background-color: rgb(242, 225, 225);

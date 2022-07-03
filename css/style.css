@@ -63,9 +63,12 @@ body {
   font-family: 'Josefin Sans', sans-serif; }
 
 #grilla {
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header"
+    "main"
+    "footer";
   display: grid;
-  grid-template-columns: 100%; }
+  grid-template-columns: 100%;
+}
 
 /* Main */
 .pink {
