@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import "./base/variables";
 @import "./base/reset";
-@import "./base/mixins";
 
 @import "partials/banner";
 @import "partials/presentacion";
 @import "partials/pedienlineaindex";
 @import "partials/productos";
 @import "./partials/historia";
+@import "./partials/mediaqueries";
 
 
 body {

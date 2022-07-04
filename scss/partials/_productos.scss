@@ -37,13 +37,34 @@
             grid-column-gap: 0px;
             grid-row-gap: 0px;
 
-            div {
-                .imagen {
-                    color: #fa6565;
-                    border-width: 5px;
-                    border-style: dotted;
-                    width: 400px;
+            @media (min-width: 0px) {
+                .gridsInicio {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
                 }
+            }
+
+            @media (min-width: 768px) {
+                .gridsInicio {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                }
+            }
+
+            @media (min-width: 1204px) {
+                .gridsInicio {
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 1fr;
+                }
+            }
+        }
+
+        div {
+            .imagen {
+                color: #fa6565;
+                border-width: 5px;
+                border-style: dotted;
+                width: 400px;
             }
         }
     }
