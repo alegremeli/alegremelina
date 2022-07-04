@@ -58,17 +58,31 @@ div a:hover {
       border-style: dotted;
       width: 400px; }
 
+.productos {
+  text-align: center; }
+  .productos .gridsHistoria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; }
+  .productos figure .imagen {
+    color: #fa6565;
+    border-width: 5px;
+    border-style: dotted;
+    width: 400px; }
+
 body {
   background-color: #f2e1e1;
   font-family: 'Josefin Sans', sans-serif; }
 
 #grilla {
-  grid-template-areas: "header"
-    "main"
-    "footer";
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
   display: grid;
-  grid-template-columns: 100%;
-}
+  grid-template-columns: 100%; }
 
 /* Main */
 .pink {

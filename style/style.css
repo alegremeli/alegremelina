@@ -73,17 +73,78 @@ div a:hover p {
   width: 400px;
 }
 
+.banner .imgBanner {
+  width: 100%;
+}
+
+.presentacion {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  font-size: larger;
+}
+
+.presentacion p {
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+.presentacion p a:hover {
+  color: #fa6565;
+}
+
+.subtituloResaltado {
+  background-color: #F4BFBF;
+}
+
+div a:hover {
+  color: #fa6565;
+}
+
+div a:hover p {
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
 .productos {
   text-align: center;
 }
-.productos .gridsHistoria {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+
+.productos h1 {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 2px;
+  line-height: 28px;
+  text-align: center;
 }
-.productos figure .imagen {
+
+.productos h1 .subtituloResaltado {
+  background-color: #F4BFBF;
+}
+
+.productos div a a:hover {
+  color: #fa6565;
+}
+
+.productos div a a:hover p {
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+.productos div .gridsInicio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.productos div .gridsInicio div .imagen {
   color: #fa6565;
   border-width: 5px;
   border-style: dotted;
@@ -359,4 +420,4 @@ footer {
   .imagen2 {
     width: 400px;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=style.css.map */
