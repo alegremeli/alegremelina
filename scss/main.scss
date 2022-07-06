@@ -7,7 +7,6 @@
 @import "partials/pedienlineaindex";
 @import "partials/productos";
 @import "./partials/historia";
-@import "./partials/mediaqueries";
 
 
 body {
@@ -198,43 +197,6 @@ footer {
 }
 
 /* mediaqueries*/
-@media screen and (max-width: 768px) {
-    nav ul li {
-        display: inline-block;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        padding: 5px
-    }
-}
-
-
-@media (min-width: 0px) {
-    .gridsInicio {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .imagen {
-        width: 300px;
-    }
-
-    .imagen2 {
-        width: 300px;
-    }
-
-    .productosImg {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .gridsHistoria {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-
-    }
-
-}
 
 @media (min-width: 768px) {
     .gridsInicio {
@@ -259,15 +221,6 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
     }
-
-    nav ul li {
-        display: inline-block;
-        margin: 30px auto;
-        text-align: center;
-        padding: 15px;
-        margin: 15px;
-    }
-
 }
 
 
