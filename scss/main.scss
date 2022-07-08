@@ -2,12 +2,11 @@
 @import "./base/variables";
 @import "./base/reset";
 
-@import "partials/banner";
 @import "partials/presentacion";
 @import "partials/pedienlineaindex";
-@import "partials/productos";
+@import "partials/productosindex";
 @import "./partials/historia";
-
+@import "./partials/productostienda";
 
 body {
     background-color: rgb(242, 225, 225);

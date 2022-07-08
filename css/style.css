@@ -3,9 +3,6 @@
   margin: 0%;
   padding: 0%; }
 
-.banner .imgBanner {
-  width: 100%; }
-
 .presentacion {
   padding: 20px;
   margin: 20px;
@@ -52,7 +49,7 @@ div a:hover {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px; }
-    @media (min-width: 480px) {
+    @media (min-width: 320px) {
       .productos div .gridsInicio {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr; } }
@@ -69,7 +66,7 @@ div a:hover {
     border-width: 5px;
     border-style: dotted;
     width: 400px; }
-    @media (min-width: 480px) {
+    @media (min-width: 320px) {
       .productos div div .imagen {
         width: 300px; } }
     @media (min-width: 1204px) {
@@ -89,6 +86,44 @@ div a:hover {
     border-width: 5px;
     border-style: dotted;
     width: 400px; }
+
+.productos {
+  text-align: center; }
+  .productos .productosImg {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    @media (min-width: 320px) {
+      .productos .productosImg {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; } }
+    @media (min-width: 768px) {
+      .productos .productosImg {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr; } }
+    @media (min-width: 1204px) {
+      .productos .productosImg {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr; } }
+    .productos .productosImg div .tienda {
+      margin: 5px;
+      width: 100%; }
+      .productos .productosImg div .tienda h2 .imagen {
+        color: #fa6565;
+        border-width: 5px;
+        border-style: dotted;
+        width: 100px; }
+        @media (min-width: 320px) {
+          .productos .productosImg div .tienda h2 .imagen {
+            width: 200px; } }
+        @media (min-width: 768px) {
+          .productos .productosImg div .tienda h2 .imagen {
+            width: 250px; } }
+        @media (min-width: 1200px) {
+          .productos .productosImg div .tienda h2 .imagen {
+            width: 350px; } }
 
 body {
   background-color: #f2e1e1;
