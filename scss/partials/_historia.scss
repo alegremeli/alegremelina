@@ -1,22 +1,29 @@
 @import "../base/variables";
 
-.productos {
-    text-align: center;
 
     .gridsHistoria {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        display: flex;
+        position: relative;
+        padding: 50px;
+        background-color: blueviolet;
+.historia {
+    padding:5px;
+    .imagen {
+        color: #fa6565;
+        border-width: 5px;
+        border-style: dotted;
+        width: 400px;
+    }
+    .textoHistoria {
+        display: flex;
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        width: 500px;
+        height: 700px;
+        left:500px;
+        bottom: 350px;
+    }
+}
     }
 
-            figure {
-            .imagen {
-                color: #fa6565;
-                border-width: 5px;
-                border-style: dotted;
-                width: 400px;
-            }
-        }
-}

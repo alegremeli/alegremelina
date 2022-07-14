@@ -1,5 +1,8 @@
     .productos {
         text-align: center;
+        display: flex;
+        position: relative;
+        padding:50px;
 
         .productosImg {
             display: grid;
@@ -24,17 +27,18 @@
                 grid-template-rows: 1fr;
             }
 
-            div {
                 .tienda {
                     margin: 5px;
                     width: 100%;
 
                     h2 {
                         .imagen {
-                            color: #fa6565;
-                            border-width: 5px;
-                            border-style: dotted;
                             width: 100px;
+                            transition-property: all;
+                            transition-duration: 2sg;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
 
                             @media (min-width: 320px) {
                                 width: 200px;
@@ -52,5 +56,4 @@
                 }
             }
         }
-    }
 

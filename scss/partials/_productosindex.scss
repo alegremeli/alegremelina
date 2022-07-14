@@ -1,71 +1,60 @@
 @import "../base/variables";
+.subtituloResaltado {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 5px;
 
-.productos {
-    text-align: center;
-
-    h1 {
-        font-family: 'Josefin Sans', sans-serif;
-        letter-spacing: 2px;
-        line-height: 28px;
-        text-align: center;
-
-        .subtituloResaltado {
-            background-color: $subtitulo;
-        }
+    h1{
+        font-size: 30px;
     }
+}
 
-    div {
-        a {
-            a:hover {
-                color: $color-hover;
-
-                p {
-                    font-size: 18px;
-                    text-align: center;
-                    letter-spacing: 1px;
-                    line-height: 28px;
-                }
-            }
-        }
-    }
-
-    div {
         .gridsInicio {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr;
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
+            gap: 20px;
+            padding: 30px;
 
             @media (min-width: 320px) {
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                margin: 10px;
+                padding: 10px;
+                gap:10px;
+            }
+
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                margin: 10px;
+                padding: 10px;
+                gap:20px;
+            }
+
+            @media (min-width: 1204px) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+            }
+
+            .imagen {
+                @media (min-width: 320px) {
+                    width: 300px;
+                    border-radius: 5px;
+                    border-style: none;
                 }
 
                 @media (min-width: 768px) {
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 1fr 1fr;
+                    width: 300px;
+                    border-radius: 5px;
+                    border-style: none;
                 }
 
                 @media (min-width: 1204px) {
-                        grid-template-columns: repeat(3, 1fr);
-                        grid-template-rows: 1fr;
-                    }
-        }
-
-        div {
-            .imagen {
-                color: #fa6565;
-                border-width: 5px;
-                border-style: dotted;
-                width: 400px;
-
-                @media (min-width: 320px) {
-                    width: 300px; }
-
-                        @media (min-width: 1204px) {
-                            width: 400px; }
+                    width: 400px;
+                    border-radius: 5px;
+                    border-style: none;
+                }
             }
-        }
-    }
-}
+            }

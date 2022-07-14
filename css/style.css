@@ -16,9 +16,6 @@
     .presentacion p a:hover {
       color: #fa6565; }
 
-.subtituloResaltado {
-  background-color: #F4BFBF; }
-
 div a:hover {
   color: #fa6565; }
   div a:hover p {
@@ -27,68 +24,59 @@ div a:hover {
     letter-spacing: 1px;
     line-height: 28px; }
 
-.productos {
-  text-align: center; }
-  .productos h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 2px;
-    line-height: 28px;
-    text-align: center; }
-    .productos h1 .subtituloResaltado {
-      background-color: #F4BFBF; }
-  .productos div a a:hover {
-    color: #fa6565; }
-    .productos div a a:hover p {
-      font-size: 18px;
-      text-align: center;
-      letter-spacing: 1px;
-      line-height: 28px; }
-  .productos div .gridsInicio {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; }
-    @media (min-width: 320px) {
-      .productos div .gridsInicio {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr; } }
-    @media (min-width: 768px) {
-      .productos div .gridsInicio {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr; } }
-    @media (min-width: 1204px) {
-      .productos div .gridsInicio {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr; } }
-  .productos div div .imagen {
-    color: #fa6565;
-    border-width: 5px;
-    border-style: dotted;
-    width: 400px; }
-    @media (min-width: 320px) {
-      .productos div div .imagen {
-        width: 300px; } }
-    @media (min-width: 1204px) {
-      .productos div div .imagen {
-        width: 400px; } }
+.subtituloResaltado {
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 2px;
+  padding: 10px;
+  border-radius: 5px; }
+  .subtituloResaltado h1 {
+    font-size: 30px; }
+
+.gridsInicio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+  padding: 30px; }
+  @media (min-width: 320px) {
+    .gridsInicio {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      margin: 10px;
+      padding: 10px;
+      gap: 10px; } }
+  @media (min-width: 768px) {
+    .gridsInicio {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin: 10px;
+      padding: 10px;
+      gap: 20px; } }
+  @media (min-width: 1204px) {
+    .gridsInicio {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr; } }
+  @media (min-width: 320px) {
+    .gridsInicio .imagen {
+      width: 300px;
+      border-radius: 5px;
+      border-style: none; } }
+  @media (min-width: 768px) {
+    .gridsInicio .imagen {
+      width: 300px;
+      border-radius: 5px;
+      border-style: none; } }
+  @media (min-width: 1204px) {
+    .gridsInicio .imagen {
+      width: 400px;
+      border-radius: 5px;
+      border-style: none; } }
 
 .productos {
-  text-align: center; }
-  .productos .gridsHistoria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px; }
-  .productos figure .imagen {
-    color: #fa6565;
-    border-width: 5px;
-    border-style: dotted;
-    width: 400px; }
-
-.productos {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  position: relative;
+  padding: 50px; }
   .productos .productosImg {
     display: grid;
     align-items: center;
@@ -107,23 +95,46 @@ div a:hover {
       .productos .productosImg {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr; } }
-    .productos .productosImg div .tienda {
+    .productos .productosImg .tienda {
       margin: 5px;
       width: 100%; }
-      .productos .productosImg div .tienda h2 .imagen {
-        color: #fa6565;
-        border-width: 5px;
-        border-style: dotted;
-        width: 100px; }
+      .productos .productosImg .tienda h2 .imagen {
+        width: 100px;
+        transition-property: all;
+        transition-duration: 2sg; }
+        .productos .productosImg .tienda h2 .imagen:hover {
+          transform: scale(1.1); }
         @media (min-width: 320px) {
-          .productos .productosImg div .tienda h2 .imagen {
+          .productos .productosImg .tienda h2 .imagen {
             width: 200px; } }
         @media (min-width: 768px) {
-          .productos .productosImg div .tienda h2 .imagen {
+          .productos .productosImg .tienda h2 .imagen {
             width: 250px; } }
         @media (min-width: 1200px) {
-          .productos .productosImg div .tienda h2 .imagen {
+          .productos .productosImg .tienda h2 .imagen {
             width: 350px; } }
+
+.gridsHistoria {
+  display: flex;
+  position: relative;
+  padding: 50px;
+  background-color: blueviolet; }
+  .gridsHistoria .historia {
+    padding: 5px; }
+    .gridsHistoria .historia .imagen {
+      color: #fa6565;
+      border-width: 5px;
+      border-style: dotted;
+      width: 400px; }
+    .gridsHistoria .historia .textoHistoria {
+      display: flex;
+      position: relative;
+      text-align: center;
+      font-size: 40px;
+      width: 500px;
+      height: 700px;
+      left: 500px;
+      bottom: 350px; }
 
 body {
   background-color: #f2e1e1;
