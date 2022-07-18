@@ -110,24 +110,6 @@ a:hover {
   color: #fa6565;
 }
 
-.imagen {
-  transition-property: all;
-  transition-duration: 2sg;
-}
-
-.imagen:hover {
-  transform: scale(1.1);
-}
-
-.imagen2 {
-  transition-property: all;
-  transition-duration: 2sg;
-}
-
-.imagen2:hover {
-  transform: scale(1.1);
-  --animate-repeat: 2;
-}
 
 .imgBanner {
   width: 100%;

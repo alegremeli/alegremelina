@@ -6,38 +6,30 @@
 .presentacion {
   padding: 20px;
   margin: 20px;
-  text-align: center;
-  font-size: larger; }
+  text-align: center; }
   .presentacion p {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     letter-spacing: 1px;
     line-height: 28px; }
     .presentacion p a:hover {
       color: #fa6565; }
 
-div a:hover {
-  color: #fa6565; }
-  div a:hover p {
-    font-size: 18px;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 28px; }
-
 .subtituloResaltado {
-  font-family: 'Josefin Sans', sans-serif;
+  background-color: #F4BFBF;
   letter-spacing: 2px;
   padding: 10px;
-  border-radius: 5px; }
-  .subtituloResaltado h1 {
-    font-size: 30px; }
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 25px; }
 
 .gridsInicio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   gap: 20px;
-  padding: 30px; }
+  padding: 30px;
+  text-align: center; }
   @media (min-width: 320px) {
     .gridsInicio {
       grid-template-columns: 1fr;
@@ -49,8 +41,8 @@ div a:hover {
     .gridsInicio {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      margin: 10px;
-      padding: 10px;
+      margin: 20px;
+      padding: 20px;
       gap: 20px; } }
   @media (min-width: 1204px) {
     .gridsInicio {
@@ -68,9 +60,17 @@ div a:hover {
       border-style: none; } }
   @media (min-width: 1204px) {
     .gridsInicio .imagen {
-      width: 400px;
+      width: 350px;
       border-radius: 5px;
       border-style: none; } }
+
+.subtituloIndex {
+  background-color: #F4BFBF;
+  letter-spacing: 2px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 22px; }
 
 .productos {
   text-align: center;
@@ -136,12 +136,17 @@ div a:hover {
       left: 500px;
       bottom: 350px; }
 
+.productos {
+  text-align: center; }
+
 body {
   background-color: #f2e1e1;
   font-family: 'Josefin Sans', sans-serif; }
 
 #grilla {
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header"
+ "main"
+ "footer";
   display: grid;
   grid-template-columns: 100%; }
 
@@ -165,20 +170,6 @@ a {
 a:hover {
   color: #fa6565; }
 
-.imagen {
-  transition-property: all;
-  transition-duration: 2sg; }
-
-.imagen:hover {
-  transform: scale(1.1); }
-
-.imagen2 {
-  transition-property: all;
-  transition-duration: 2sg; }
-
-.imagen2:hover {
-  transform: scale(1.1);
-  --animate-repeat: 2; }
 
 .imgBanner {
   width: 100%; }
