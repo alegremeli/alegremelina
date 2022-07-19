@@ -52,7 +52,7 @@
                 ¡Estamos para ayudarte! Nos pondremos en contacto. </h2>
         </section>
 
-        <section>
+        <section class="contacto">
             <div class="container">
                 <form class="row-justify-content-center form-control rosita">
                     <div class="form-group form-control pink mb-2">
@@ -68,17 +68,21 @@
                         <div>
                             <p>¿Qué día te contactamos?:</p>
                         </div>
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            martes
-                        </label>
                     </div>
-                    <div class="form-group form-control  pink mb-2">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                            checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            jueves
-                        </label>
+                    <div class="form-group form-control pink mb-2">
+                        <div>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                martes
+                            </label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label ml-30" for="flexRadioDefault2">
+                                jueves
+                            </label>
+                        </div>
                     </div>
                     <div class="form-group form-control  mb-2 pink">
                         <select class="form-select" id="inputGroupSelect04"
@@ -89,20 +93,25 @@
                             <option value="3">17 a 20pm</option>
                         </select>
                     </div>
-                    <div class="form-group mb-2">
-                        <button type="submit" class="btn btn-primary fucsia">Enviar</button>
+                    <div class="form-group mb-2  botonContacto">
+                        <button type="submit" class="btn btn-primary ">Enviar</button>
                     </div>
-                    <div class="form-group mb-2">
-                        <button type="reset" class="btn btn-primary fucsia">Resetear</button>
+                    <div class="form-group mb-2 botonContacto ">
+                        <button type="reset" class="btn btn-primary ">Resetear</button>
                     </div>
                 </form>
-            </div>
-            <div>
+            </section>
+
+            <section>
                 <h1 class="subtituloResaltado"> Medios de contacto</h1>
-                <p> Nos encontramos en Ezeiza, calle xxxx.</p>
-                <p> Llamanos al 4389 - XXXX.</p>
-                <p> Horario lunes a viernes de 9 a 13 pm y de 17 a 20 pm.</p>
-            </div>
+            </section>
+
+            <section class="textoContacto">
+                <div>
+                    <p> Llamanos al 4389 - XXXX.</p>
+                    <p> Nos encontramos en Ezeiza, calle xxxx.</p>
+                    <p> Horario lunes a viernes de 9 a 13 pm y de 17 a 20 pm.</p>
+                </div>
             </section>
             </main>
 
@@ -128,7 +137,7 @@
 
 
 
-            <a href="../secciones/contacto.html">
+            <a href="../secciones/contacto.html"> Contacto
             </a>
         </div>
     </footer>

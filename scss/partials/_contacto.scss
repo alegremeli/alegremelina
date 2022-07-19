@@ -1,0 +1,33 @@
+.contacto {
+    .container {
+        form {
+            div {
+                label {
+                    font-size: 1.4rem;
+                }
+                input {
+                    font-size: 1.3rem;
+                }
+                textarea {
+                    font-size: 1.3rem;
+                }
+                div {
+                    p {
+                        font-size: 1.3rem;
+                    }
+                }
+                select {
+                    font-size: 1.3rem;
+                }
+                        .botonContacto {
+                            color: black;
+                        }
+            }
+        }
+    }
+}
+
+.textoContacto {
+        display: flex;
+        justify-content: space-around;
+}

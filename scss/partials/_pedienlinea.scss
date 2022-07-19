@@ -41,17 +41,6 @@
     }
     .textoEnvios {
         text-align: center;
-        font-size: 50px;
-        @media (min-width: 320px) {
-            font-size: 30px;
-        }
-
-        @media (min-width: 768px) {
-            font-size: 40px;
-        }
-
-        @media (min-width: 1204px) {
-            font-size: 60px;
-        }
+        font-size: $pTexto;
     }
 }

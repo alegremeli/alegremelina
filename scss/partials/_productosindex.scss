@@ -10,8 +10,6 @@
 
     .gridsInicio {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
         gap: 20px;
         padding: 30px;
         position: relative;
@@ -61,7 +59,7 @@
             padding: 10px;
             margin: 10px;
             border-radius: 5px;
-            font-size: 22px;
+            font-size: 30px;
         }
 
 .gridsIndex {
@@ -84,7 +82,7 @@
 
     @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         
     }
 
@@ -110,16 +108,6 @@
     }
     .textoIndex {
         text-align: center;
-        @media (min-width: 320px) {
-            font-size: 30px;
-        }
-
-        @media (min-width: 768px) {
-            font-size: 40px;
-        }
-
-        @media (min-width: 1204px) {
-            font-size: 30px;
-        }
+        font-size: $pTexto + 0.2rem;
     }
 }

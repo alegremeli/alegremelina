@@ -7,6 +7,8 @@
 @import "./partials/productostienda";
 @import "./partials/historia";
 @import "./partials/pedienlinea";
+@import "./footer";
+@import "./partials/contacto";
 
 body {
     background-color: rgb(242, 225, 225);
@@ -28,10 +30,6 @@ body {
 
 .pink {
     background-color: #f4bfbf
-}
-
-.fucsia {
-    background-color: #fa6565;
 }
 
 .rosita {
@@ -66,6 +64,7 @@ h1 {
     letter-spacing: 2px;
     line-height: 28px;
     text-align: center;
+    font-size: 10rem;
 }
 
 h2 {
@@ -83,16 +82,11 @@ h2 {
     text-align: center;
     margin: 10px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
-p {
-    font-size: 18px;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 28px;
-}
+
 
 .presentacion {
     padding: 20px;
@@ -100,14 +94,6 @@ p {
     text-align: center;
     font-size: larger;
 
-}
-
-.gridsInicio {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
 }
 
 .productos {
@@ -123,58 +109,10 @@ p {
 
 }
 
-.imagen2 {
-    color: #fa6565;
-    border-width: 5px;
-    border-style: dotted;
-    width: 400px;
-
-}
-
-.gridHistoria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-
-.tienda {
-    margin: 5px;
-    width: 100%;
-}
-
-.productosImg {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-
-}
-
-.contacto {
-    background-color: #fa6565;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    margin: 5px;
-    border-width: 5px;
-}
 
 /* Fin del main */
 
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: #F4BFBF;
-    padding-bottom: 2px;
-    margin-bottom: 0px;
-    margin-top: 30px;
-    grid-area: footer;
-}
+
 
 /* mediaqueries*/
 
