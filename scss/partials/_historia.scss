@@ -2,28 +2,49 @@
 
 
     .gridsHistoria {
-        display: flex;
-        position: relative;
+        display: grid;
         padding: 50px;
-        background-color: blueviolet;
-.historia {
-    padding:5px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        
+        @media (min-width: 320px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        @media (min-width: 1204px) {
+            grid-template-columns:  1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
     .imagen {
-        color: #fa6565;
-        border-width: 5px;
-        border-style: dotted;
-        width: 400px;
+        border-radius: 15px;
+        border-style: none;
+        width: 350px;
+        @media (min-width: 320px) {
+            width:300px;
+        }
+
+        @media (min-width: 768px) {
+            width:300px;
+        }
+
+        @media (min-width: 1204px) {
+            width:400px;
+        }
     }
     .textoHistoria {
-        display: flex;
-        position: relative;
         text-align: center;
-        font-size: 40px;
-        width: 500px;
-        height: 700px;
-        left:500px;
-        bottom: 350px;
+        font-size: 50px;
     }
-}
+
     }
 

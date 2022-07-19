@@ -10,21 +10,18 @@
 
     .gridsInicio {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 20px;
         padding: 30px;
         position: relative;
-        justify-content: space-around;
-        align-content: space-around;
+        justify-content: center;
+        align-content: center;
         text-align: center;
 
         @media (min-width: 320px) {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr;
-            gap: 10px;
-            padding:30px;
-            margin: 10px;
         }
 
         @media (min-width: 768px) {
@@ -36,7 +33,6 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr;
         }
-        div {
 
             .imagen {
                 @media (min-width: 320px) {
@@ -58,7 +54,6 @@
                 }
             }
         }
-        }
 
         .subtituloIndex {
             background-color: #F4BFBF;
@@ -69,4 +64,62 @@
             font-size: 22px;
         }
 
+.gridsIndex {
+    display: grid;
+    padding: 25px;
+    margin:25px;
+    gap:20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
+    
+    @media (min-width: 320px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    @media (min-width: 1204px) {
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .imagen{
+        border-radius: 15px;
+        border-style: none;
+        width: 350px;
+        @media (min-width: 320px) {
+            width:300px;
+        }
+
+        @media (min-width: 768px) {
+            width:300px;
+        }
+
+        @media (min-width: 1204px) {
+            width:400px;
+        }
+    }
+    .textoIndex {
+        text-align: center;
+        @media (min-width: 320px) {
+            font-size: 30px;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 40px;
+        }
+
+        @media (min-width: 1204px) {
+            font-size: 30px;
+        }
+    }
+}

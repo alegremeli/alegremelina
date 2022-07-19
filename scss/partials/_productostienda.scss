@@ -1,8 +1,8 @@
     .productos {
         text-align: center;
-        display: flex;
-        position: relative;
         padding:50px;
+        gap: 20px;
+        padding: 30px;
 
         .productosImg {
             display: grid;
@@ -10,7 +10,6 @@
             justify-content: center;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
-
 
             @media (min-width: 320px) {
                 grid-template-columns: 1fr;
@@ -27,33 +26,48 @@
                 grid-template-rows: 1fr;
             }
 
-                .tienda {
-                    margin: 5px;
-                    width: 100%;
-
-                    h2 {
+            p {
+                font-size: 25px;
+            }
                         .imagen {
-                            width: 100px;
-                            transition-property: all;
-                            transition-duration: 2sg;
-                            &:hover{
-                                transform: scale(1.1);
-                            }
-
+                            transition: 1s;
                             @media (min-width: 320px) {
-                                width: 200px;
+                                width: 250px;
+                                border-radius: 5px;
+                                border-style: none;
                             }
 
                             @media (min-width: 768px) {
-                                width: 250px;
+                                width: 300px;
+                                border-radius: 5px;
+                                border-style: none;
                             }
 
                             @media (min-width: 1200px) {
                                 width: 350px;
+                                border-radius: 5px;
+                                border-style: none;
+                                &:hover {
+                                    transform: scale(1.1);
+                                }
                             }
                         }
+                        .boton {
+                            text-align: center;
+                            @media (min-width: 320px) {
+                                text-align: center;
+                            }
+
+                            @media (min-width: 768px) {
+                                text-align: center;
+                            }
+
+                            @media (min-width: 1200px) {
+                                text-align: center;
+                                }
+                            }
+                        }
+                        
                     }
-                }
-            }
-        }
+
 
