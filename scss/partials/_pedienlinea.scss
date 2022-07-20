@@ -1,46 +1,55 @@
+@import "../base/variables";
+
+// Mediaqueries de la grilla, sección "Pedi en línea".
+
 .gridsEnvios {
     display: grid;
-    padding: 25px;
-    margin:25px;
+    padding: 10px;
+    margin: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    grid-template-columns:  1fr 1fr;
-    grid-template-rows: 1fr 1fr;
 
-    
-    @media (min-width: 320px) {
+
+    @media (min-width: 340px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
     @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
     @media (min-width: 1204px) {
-        grid-template-columns:  1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
-    .imagen{
+
+    // Mediaqueries de las imagenes de la grilla.
+
+    .imagen {
         border-radius: 15px;
         border-style: none;
         width: 350px;
-        @media (min-width: 320px) {
-            width:300px;
+
+        @media (min-width: 340px) {
+            width: 300px;
         }
 
         @media (min-width: 768px) {
-            width:300px;
+            width: 300px;
         }
 
         @media (min-width: 1204px) {
-            width:400px;
+            width: 400px;
         }
     }
+
+    // Estilo del texto. 
+
     .textoEnvios {
         text-align: center;
-        font-size: $pTexto;
+        font-size: $pHistoriaEnvios;
     }
 }

@@ -1,0 +1,122 @@
+@import "../base/variables";
+
+// Estilos del texto en la presentación
+
+.presentacion {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+
+
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 28px;
+
+        a:hover {
+            color: $color-hover;
+        }
+    }
+}
+
+// Mediaqueries de la grilla del Inicio 
+
+.gridsInicio {
+    display: grid;
+    gap: 20px;
+    padding: 30px;
+    text-align: center;
+
+    @media (min-width: 360px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    @media (min-width: 1204px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    // Mediaqueries de las imagenes de la grilla
+
+    .imagen {
+        @media (min-width: 360px) {
+            width: 300px;
+            border-radius: 5px;
+            border-style: none;
+        }
+
+        @media (min-width: 1204px) {
+            width: 350px;
+            border-radius: 5px;
+            border-style: none;
+        }
+    }
+}
+
+// Mediaqueries de la segunda grilla del Inicio
+
+.gridsIndex {
+    display: grid;
+    padding: 25px;
+    margin: 25px;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+
+    @media (min-width: 360px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    @media (min-width: 1204px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+
+    // Mediaqueries de las imagenes de la segunda grilla
+
+    .imagen {
+        border-radius: 15px;
+        border-style: none;
+        width: 350px;
+
+        @media (min-width: 320px) {
+            width: 300px;
+        }
+
+        @media (min-width: 768px) {
+            width: 300px;
+        }
+
+        @media (min-width: 1204px) {
+            width: 400px;
+        }
+    }
+
+    // Tamaño de fuente del texto
+
+    .textoIndex {
+        font-size: $pHistoriaEnvios;
+
+        @media (min-width: 1204px) {
+            font-size: 1.3rem;
+        }
+    }
+}
+

@@ -1,14 +1,14 @@
 @import "../base/variables";
 
+// Mediaqueries de la grilla, html Historia.
 
     .gridsHistoria {
         display: grid;
-        padding: 50px;
+        padding: 10px;
+        margin:10px;
         align-items: center;
         justify-content: center;
         text-align: center;
-        grid-template-columns:  1fr 1fr;
-        grid-template-rows: 1fr 1fr;
 
         
         @media (min-width: 320px) {
@@ -18,13 +18,16 @@
 
         @media (min-width: 768px) {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr;
         }
 
         @media (min-width: 1204px) {
             grid-template-columns:  1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr;
         }
+
+// Mediaqueries de las imagenes de la grilla.
+
     .imagen {
         border-radius: 15px;
         border-style: none;
@@ -41,9 +44,12 @@
             width:400px;
         }
     }
+
+// Estilos del texto, sección Historia.
+
     .textoHistoria {
         text-align: center;
-        font-size: $pTexto;
+        font-size: $pHistoriaEnvios;
     }
 
     }

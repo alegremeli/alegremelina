@@ -8,30 +8,19 @@
   margin: 20px;
   text-align: center; }
   .presentacion p {
-    font-size: 20px;
+    font-size: 1.3rem;
     text-align: center;
     letter-spacing: 1px;
     line-height: 28px; }
     .presentacion p a:hover {
       color: #fa6565; }
 
-.subtituloResaltado {
-  background-color: #F4BFBF;
-  letter-spacing: 2px;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  font-size: 25px; }
-
 .gridsInicio {
   display: grid;
   gap: 20px;
   padding: 30px;
-  position: relative;
-  justify-content: center;
-  align-content: center;
   text-align: center; }
-  @media (min-width: 320px) {
+  @media (min-width: 360px) {
     .gridsInicio {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr; } }
@@ -43,12 +32,7 @@
     .gridsInicio {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr; } }
-  @media (min-width: 320px) {
-    .gridsInicio .imagen {
-      width: 300px;
-      border-radius: 5px;
-      border-style: none; } }
-  @media (min-width: 768px) {
+  @media (min-width: 360px) {
     .gridsInicio .imagen {
       width: 300px;
       border-radius: 5px;
@@ -59,26 +43,15 @@
       border-radius: 5px;
       border-style: none; } }
 
-.subtituloIndex {
-  background-color: #F4BFBF;
-  letter-spacing: 2px;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  font-size: 30px; }
-
 .gridsIndex {
   display: grid;
   padding: 25px;
   margin: 25px;
   gap: 20px;
-  position: relative;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
-  @media (min-width: 320px) {
+  justify-content: center; }
+  @media (min-width: 360px) {
     .gridsIndex {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr; } }
@@ -104,19 +77,55 @@
       .gridsIndex .imagen {
         width: 400px; } }
   .gridsIndex .textoIndex {
+    font-size: 1.2rem; }
+    @media (min-width: 1204px) {
+      .gridsIndex .textoIndex {
+        font-size: 1.3rem; } }
+
+.gridsHistoria {
+  display: grid;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  @media (min-width: 320px) {
+    .gridsHistoria {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr; } }
+  @media (min-width: 768px) {
+    .gridsHistoria {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr; } }
+  @media (min-width: 1204px) {
+    .gridsHistoria {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr; } }
+  .gridsHistoria .imagen {
+    border-radius: 15px;
+    border-style: none;
+    width: 350px; }
+    @media (min-width: 320px) {
+      .gridsHistoria .imagen {
+        width: 300px; } }
+    @media (min-width: 768px) {
+      .gridsHistoria .imagen {
+        width: 300px; } }
+    @media (min-width: 1204px) {
+      .gridsHistoria .imagen {
+        width: 400px; } }
+  .gridsHistoria .textoHistoria {
     text-align: center;
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
 
 .productos {
   text-align: center;
-  padding: 50px;
-  padding: 30px; }
+  margin: 10px;
+  padding: 10px; }
   .productos .productosImg {
     display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
+    margin: 10px;
+    padding: 10px; }
     @media (min-width: 320px) {
       .productos .productosImg {
         grid-template-columns: 1fr;
@@ -163,60 +172,21 @@
         width: 100px;
         margin-top: 20px; }
 
-.gridsHistoria {
-  display: grid;
-  padding: 50px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
-  @media (min-width: 320px) {
-    .gridsHistoria {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr; } }
-  @media (min-width: 768px) {
-    .gridsHistoria {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr; } }
-  @media (min-width: 1204px) {
-    .gridsHistoria {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr; } }
-  .gridsHistoria .imagen {
-    border-radius: 15px;
-    border-style: none;
-    width: 350px; }
-    @media (min-width: 320px) {
-      .gridsHistoria .imagen {
-        width: 300px; } }
-    @media (min-width: 768px) {
-      .gridsHistoria .imagen {
-        width: 300px; } }
-    @media (min-width: 1204px) {
-      .gridsHistoria .imagen {
-        width: 400px; } }
-  .gridsHistoria .textoHistoria {
-    text-align: center;
-    font-size: 1.3rem; }
-
 .gridsEnvios {
   display: grid;
-  padding: 25px;
-  margin: 25px;
+  padding: 10px;
+  margin: 10px;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
-  @media (min-width: 320px) {
+  text-align: center; }
+  @media (min-width: 340px) {
     .gridsEnvios {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr; } }
   @media (min-width: 768px) {
     .gridsEnvios {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr; } }
+      grid-template-rows: 1fr; } }
   @media (min-width: 1204px) {
     .gridsEnvios {
       grid-template-columns: 1fr 1fr;
@@ -225,7 +195,7 @@
     border-radius: 15px;
     border-style: none;
     width: 350px; }
-    @media (min-width: 320px) {
+    @media (min-width: 340px) {
       .gridsEnvios .imagen {
         width: 300px; } }
     @media (min-width: 768px) {
@@ -236,19 +206,13 @@
         width: 400px; } }
   .gridsEnvios .textoEnvios {
     text-align: center;
-    font-size: 1.3rem; }
+    font-size: 1.2rem; }
 
-footer {
-  display: flex;
-  justify-content: center;
-  background-color: #F4BFBF;
-  padding-top: 20px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  grid-area: footer; }
-  footer .imgFooter {
-    margin-right: 30px;
-    margin-left: 30px; }
+.tituloContacto h2 {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.4rem; }
 
 .contacto .container form div label {
   font-size: 1.4rem; }
@@ -270,7 +234,24 @@ footer {
 
 .textoContacto {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  font-size: 1.3rem;
+  padding: 10px;
+  margin: 10px; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #F4BFBF;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  grid-area: footer; }
+  footer .imgFooter {
+    margin-right: 30px;
+    margin-left: 30px; }
+  footer p {
+    margin-top: 10px;
+    text-align: center; }
 
 body {
   background-color: #f2e1e1;
@@ -281,7 +262,6 @@ body {
   display: grid;
   grid-template-columns: 100%; }
 
-/* Main */
 .pink {
   background-color: #f4bfbf; }
 
@@ -301,80 +281,12 @@ a:hover {
 .imgBanner {
   width: 100%; }
 
-.animate__heartBeat {
-  ---animate-duration: 3sg; }
-
-h1 {
-  font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: 2px;
-  line-height: 28px;
-  text-align: center;
-  font-size: 10rem; }
-
-h2 {
-  font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: 3px;
-  line-height: 28px;
-  text-align: center;
-  margin: 5px;
-  padding: 5px; }
-
 .subtituloResaltado {
   background-color: #F4BFBF;
   text-align: center;
   margin: 10px;
   padding: 10px;
-  font-size: 30px; }
-
-.presentacion {
-  padding: 20px;
-  margin: 20px;
-  text-align: center;
-  font-size: larger; }
+  font-size: 1.4rem; }
 
 .productos {
   text-align: center; }
-
-.imagen {
-  color: #fa6565;
-  border-width: 5px;
-  border-style: dotted;
-  width: 400px; }
-
-/* Fin del main */
-/* mediaqueries*/
-@media (min-width: 768px) {
-  .gridsInicio {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
-  .imagen {
-    width: 300px; }
-  .imagen2 {
-    width: 300px; }
-  .productosImg {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
-  .gridsHistoria {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr; } }
-
-@media (min-width: 1204px) {
-  .gridsInicio {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr; }
-  .imagen {
-    width: 350px; }
-  .imagen2 {
-    width: 350px; }
-  .gridsHistoria {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr; }
-  .productosImg {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); } }
-
-@media (min-width: 1400px) {
-  .imagen {
-    width: 400px; }
-  .imagen2 {
-    width: 400px; } }

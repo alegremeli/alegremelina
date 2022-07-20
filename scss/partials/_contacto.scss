@@ -1,3 +1,16 @@
+// Estilos del subtitulo de la sección Contacto.
+
+.tituloContacto {
+    h2 {
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        font-size: 1.4rem;
+    }
+}
+
+// Estilos de los textos del formulario.
+
 .contacto {
     .container {
         form {
@@ -5,29 +18,39 @@
                 label {
                     font-size: 1.4rem;
                 }
+
                 input {
                     font-size: 1.3rem;
                 }
+
                 textarea {
                     font-size: 1.3rem;
                 }
+
                 div {
                     p {
                         font-size: 1.3rem;
                     }
                 }
+
                 select {
                     font-size: 1.3rem;
                 }
-                        .botonContacto {
-                            color: black;
-                        }
+
+                .botonContacto {
+                    color: black;
+                }
             }
         }
     }
 }
 
+// Estilo del texto Contacto.
+
 .textoContacto {
-        display: flex;
-        justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 10px;
 }

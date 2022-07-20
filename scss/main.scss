@@ -2,13 +2,12 @@
 @import "./base/variables";
 @import "./base/reset";
 
-@import "partials/presentacion";
-@import "partials/productosindex";
-@import "./partials/productostienda";
+@import "partials/index";
 @import "./partials/historia";
+@import "./partials/menu";
 @import "./partials/pedienlinea";
-@import "./footer";
 @import "./partials/contacto";
+@import "./partials/footer";
 
 body {
     background-color: rgb(242, 225, 225);
@@ -23,10 +22,6 @@ body {
     display: grid;
     grid-template-columns: 100%;
 }
-
-
-
-/* Main */
 
 .pink {
     background-color: #f4bfbf
@@ -49,136 +44,20 @@ a:hover {
     color: #fa6565;
 }
 
-
 .imgBanner {
     width: 100%;
 }
-
-.animate__heartBeat {
-    ---animate-duration: 3sg;
-}
-
-
-h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 2px;
-    line-height: 28px;
-    text-align: center;
-    font-size: 10rem;
-}
-
-h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 3px;
-    line-height: 28px;
-    text-align: center;
-    margin: 5px;
-    padding: 5px;
-}
-
 
 .subtituloResaltado {
     background-color: #F4BFBF;
     text-align: center;
     margin: 10px;
     padding: 10px;
-    font-size: 30px;
-}
-
-
-
-
-.presentacion {
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    font-size: larger;
-
+    font-size: 1.4rem;
 }
 
 .productos {
     text-align: center;
 }
-
-
-.imagen {
-    color: #fa6565;
-    border-width: 5px;
-    border-style: dotted;
-    width: 400px;
-
-}
-
-
-/* Fin del main */
-
-
-
-/* mediaqueries*/
-
-@media (min-width: 768px) {
-    .gridsInicio {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .imagen {
-        width: 300px;
-    }
-
-    .imagen2 {
-        width: 300px;
-    }
-
-    .productosImg {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .gridsHistoria {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-    }
-}
-
-
-@media (min-width: 1204px) {
-    .gridsInicio {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-    }
-
-    .imagen {
-        width: 350px;
-    }
-
-    .imagen2 {
-        width: 350px;
-    }
-
-    .gridsHistoria {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-    }
-
-    .productosImg {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-
-    }
-}
-
-@media (min-width: 1400px) {
-    .imagen {
-        width: 400px;
-    }
-
-    .imagen2 {
-        width: 400px;
-    }
-
-}
-
-
 
 
