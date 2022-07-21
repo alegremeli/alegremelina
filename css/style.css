@@ -119,9 +119,7 @@
     font-size: 1.2rem; }
 
 .productos {
-  text-align: center;
-  margin: 10px;
-  padding: 10px; }
+  text-align: center; }
   .productos .productosImg {
     display: grid;
     margin: 10px;
