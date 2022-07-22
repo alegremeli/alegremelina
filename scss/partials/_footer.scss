@@ -9,11 +9,11 @@ footer {
     margin-bottom: 0px;
     grid-area: footer;
 
-    // Estilos de los iconos.
+    // Estilos de los iconos/ Mediaqueries.
 
     .imgFooter {
         @media (max-width: 340px) {
-            margin-right: 30px;
+            margin-right: 0px;
         }
 
         @media (min-width: 341px) {
