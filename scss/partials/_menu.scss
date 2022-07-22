@@ -1,78 +1,77 @@
 .productos {
-        text-align: center;
+    text-align: center;
 
-// Mediaqueries de la grilla, sección Menú.
+    // Mediaqueries de la grilla, sección Menú.
 
-        .productosImg {
-            display: grid;
-            margin:10px;
-            padding: 10px;
+    .productosImg {
+        display: grid;
+        margin: 10px;
+        padding: 10px;
 
-            @media (min-width: 320px) {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                gap:80px;
-            }
-
-            @media (min-width: 560px) {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                gap:100px;
-                column-gap: 20px;
-            }
-
-            @media (min-width: 1204px) {
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: 1fr;
-                row-gap: 80px;
-            }
-
-            .tienda {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                align-items: center;
-
-                p {
-                    font-size: 25px;
-                }
-
-// Mediaqueries de las imagenes en la grilla.
-
-                .imagen {
-                    transition: 0.5s;
-
-                    @media (min-width: 320px) {
-                        width: 250px;
-                        border-radius: 5px;
-                        border-style: none;
-                    }
-
-                    @media (min-width: 768px) {
-                        width: 250px;
-                        border-radius: 5px;
-                        border-style: none;
-                    }
-
-                    @media (min-width: 1200px) {
-                        width: 300px;
-                        border-radius: 5px;
-                        border-style: none;
-
-                        &:hover {
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-
-// Estilos de los botones.
-
-                a {
-                    width:100px;
-                    margin-top: 20px;
-                }
-            }
+        @media (min-width: 320px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 80px;
         }
 
+        @media (min-width: 560px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 100px;
+            column-gap: 20px;
+        }
+
+        @media (min-width: 1204px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            row-gap: 80px;
+        }
+
+        .tienda {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+
+            p {
+                font-size: 25px;
+            }
+
+            // Mediaqueries de las imagenes en la grilla.
+
+            .imagen {
+                transition: 0.5s;
+
+                @media (min-width: 320px) {
+                    width: 250px;
+                    border-radius: 5px;
+                    border-style: none;
+                }
+
+                @media (min-width: 768px) {
+                    width: 250px;
+                    border-radius: 5px;
+                    border-style: none;
+                }
+
+                @media (min-width: 1200px) {
+                    width: 300px;
+                    border-radius: 5px;
+                    border-style: none;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            // Estilos de los botones.
+
+            a {
+                width: 100px;
+                margin-top: 20px;
+            }
+        }
     }
 
+}
