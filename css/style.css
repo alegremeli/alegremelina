@@ -32,16 +32,18 @@
     .gridsInicio {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr; } }
-  @media (min-width: 360px) {
-    .gridsInicio .imagen {
-      width: 300px;
-      border-radius: 5px;
-      border-style: none; } }
-  @media (min-width: 1204px) {
-    .gridsInicio .imagen {
-      width: 350px;
-      border-radius: 5px;
-      border-style: none; } }
+  .gridsInicio .imagen {
+    border-radius: 5px;
+    border-style: none; }
+    @media (min-width: 320px) {
+      .gridsInicio .imagen {
+        width: 250px; } }
+    @media (min-width: 1204px) {
+      .gridsInicio .imagen {
+        width: 300px; } }
+    @media (min-width: 1204px) {
+      .gridsInicio .imagen {
+        width: 350px; } }
 
 .gridsIndex {
   display: grid;
@@ -64,12 +66,10 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr; } }
   .gridsIndex .imagen {
-    border-radius: 15px;
-    border-style: none;
-    width: 350px; }
+    border-radius: 15px; }
     @media (min-width: 320px) {
       .gridsIndex .imagen {
-        width: 300px; } }
+        width: 250px; } }
     @media (min-width: 768px) {
       .gridsIndex .imagen {
         width: 300px; } }
@@ -103,8 +103,7 @@
       grid-template-rows: 1fr; } }
   .gridsHistoria .imagen {
     border-radius: 15px;
-    border-style: none;
-    width: 350px; }
+    border-style: none; }
     @media (min-width: 320px) {
       .gridsHistoria .imagen {
         width: 300px; } }
@@ -127,18 +126,18 @@
     @media (min-width: 320px) {
       .productos .productosImg {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 80px; } }
     @media (min-width: 560px) {
       .productos .productosImg {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 100px;
         column-gap: 20px; } }
     @media (min-width: 1204px) {
       .productos .productosImg {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         row-gap: 80px; } }
     .productos .productosImg .tienda {
       display: flex;
@@ -148,22 +147,18 @@
       .productos .productosImg .tienda p {
         font-size: 25px; }
       .productos .productosImg .tienda .imagen {
-        transition: 0.5s; }
+        transition: 0.5s;
+        border-radius: 5px;
+        border-style: none; }
         @media (min-width: 320px) {
           .productos .productosImg .tienda .imagen {
-            width: 250px;
-            border-radius: 5px;
-            border-style: none; } }
+            width: 250px; } }
         @media (min-width: 768px) {
           .productos .productosImg .tienda .imagen {
-            width: 250px;
-            border-radius: 5px;
-            border-style: none; } }
+            width: 250px; } }
         @media (min-width: 1200px) {
           .productos .productosImg .tienda .imagen {
-            width: 300px;
-            border-radius: 5px;
-            border-style: none; }
+            width: 300px; }
             .productos .productosImg .tienda .imagen:hover {
               transform: scale(1.1); } }
       .productos .productosImg .tienda a {
@@ -177,7 +172,7 @@
   align-items: center;
   justify-content: center;
   text-align: center; }
-  @media (min-width: 340px) {
+  @media (min-width: 320px) {
     .gridsEnvios {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr; } }
@@ -191,11 +186,10 @@
       grid-template-rows: 1fr; } }
   .gridsEnvios .imagen {
     border-radius: 15px;
-    border-style: none;
-    width: 350px; }
-    @media (min-width: 340px) {
+    border-style: none; }
+    @media (min-width: 320px) {
       .gridsEnvios .imagen {
-        width: 300px; } }
+        width: 250px; } }
     @media (min-width: 768px) {
       .gridsEnvios .imagen {
         width: 300px; } }
@@ -240,13 +234,19 @@
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: #F4BFBF;
   padding-top: 20px;
   margin-bottom: 0px;
   grid-area: footer; }
-  footer .imgFooter {
-    margin-right: 30px;
-    margin-left: 30px; }
+  @media (max-width: 340px) {
+    footer .imgFooter {
+      margin-right: 30px; } }
+  @media (min-width: 341px) {
+    footer .imgFooter {
+      margin-left: 30px;
+      margin-right: 30px; } }
   footer p {
     margin-top: 10px;
     text-align: center; }
@@ -281,6 +281,7 @@ a:hover {
 
 .subtituloResaltado {
   background-color: #F4BFBF;
+  border-radius: 10px;
   text-align: center;
   margin: 10px;
   padding: 10px;

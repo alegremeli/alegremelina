@@ -11,7 +11,7 @@
     text-align: center;
 
 
-    @media (min-width: 340px) {
+    @media (min-width: 320px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -31,10 +31,9 @@
     .imagen {
         border-radius: 15px;
         border-style: none;
-        width: 350px;
 
-        @media (min-width: 340px) {
-            width: 300px;
+        @media (min-width: 320px) {
+            width: 250px;
         }
 
         @media (min-width: 768px) {

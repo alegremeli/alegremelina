@@ -1,6 +1,6 @@
 @import "../base/variables";
 
-// Estilos del texto en la presentación
+// Estilos del texto en la presentación.
 
 .presentacion {
     padding: 20px;
@@ -20,7 +20,7 @@
     }
 }
 
-// Mediaqueries de la grilla del Inicio 
+// Mediaqueries de la grilla del Inicio.
 
 .gridsInicio {
     display: grid;
@@ -43,24 +43,27 @@
         grid-template-rows: 1fr;
     }
 
-    // Mediaqueries de las imagenes de la grilla
+    // Mediaqueries de las imagenes de la grilla.
 
     .imagen {
-        @media (min-width: 360px) {
+        border-radius: 5px;
+        border-style: none;
+
+        @media (min-width: 320px) {
+            width: 250px;
+        }
+
+        @media (min-width: 1204px) {
             width: 300px;
-            border-radius: 5px;
-            border-style: none;
         }
 
         @media (min-width: 1204px) {
             width: 350px;
-            border-radius: 5px;
-            border-style: none;
         }
     }
 }
 
-// Mediaqueries de la segunda grilla del Inicio
+// Mediaqueries de la segunda grilla del Inicio.
 
 .gridsIndex {
     display: grid;
@@ -89,15 +92,13 @@
     }
 
 
-    // Mediaqueries de las imagenes de la segunda grilla
+    // Mediaqueries de las imagenes de la segunda grilla.
 
     .imagen {
         border-radius: 15px;
-        border-style: none;
-        width: 350px;
 
         @media (min-width: 320px) {
-            width: 300px;
+            width: 250px;
         }
 
         @media (min-width: 768px) {
@@ -109,7 +110,7 @@
         }
     }
 
-    // Tamaño de fuente del texto
+    // Tamaño de fuente del texto.
 
     .textoIndex {
         font-size: $pHistoriaEnvios;
